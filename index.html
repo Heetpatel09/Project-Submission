@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="background" background="./img9.jpg">
+    <script>
+        window.onload = function() {
+            let body = document.getElementById('background');
+            let img = ['./img0.jpg', './img1.jpg', './img2.jpg', './img3.jpg','./img4.jpg', './img5.jpg', './img6.jpg', './img7.jpg','./img8.jpg', './img9.jpg'];
+            let i = 0;
+            setInterval(() => {
+                body.style.backgroundImage = `url(${img[i]})`;
+                i = i + 1;
+                if(i>9){
+                    i=0
+                }
+            },3000);
+        };
+    </script>
+</body>
+</html>
